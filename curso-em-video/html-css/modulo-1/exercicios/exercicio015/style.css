@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(158, 159, 247));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: darkblue;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+    text-indent: 20px;
+    text-align: justify;
+}
