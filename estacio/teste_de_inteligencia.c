@@ -1,33 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <locale.h>
+#include <windows.h> //Biblioteca para habilitar o SetConsole
+
 
 int main()
 {
 
-    setlocale(LC_ALL, "Portuguese");
+    SetConsoleCP(1252); //Comando para reconhecer acentuaÃ§Ã£o
+    SetConsoleOutputCP(1252);
     char resp;
 
 
-    printf("\nTeste rápido de inteligência. Responda a pergunta e obtenha o resultado\n");
-    printf("\nVocê votou em BOLSONARO em 2018? digite S(sim) ou N(não): ");
+    printf("\nTeste rÃ¡pido de inteligÃªncia. Responda a pergunta e obtenha o resultado\n");
+    printf("\nVocÃª vai votar em BOLSONARO? digite S(sim) ou N(nÃ£o): ");
     scanf("%c", &resp);
 
     while ((resp!='s')&&(resp!='S')&&(resp!='n')&&(resp!='N'))
     {
-        printf("\nDigite a resposta correta S(sim) ou N(não)");
+        printf("\nDigite a resposta correta S(sim) ou N(nÃ£o)");
         scanf(" %c", &resp);
 
     }
 
     if ((resp=='S')||(resp=='s'))
     {
-        printf("\nRESPOSTA: Você é BURRO!\n");
+        printf("\nRESPOSTA: VocÃª Ã© BURRO!\n");
     }
     else
     {
-        printf("\nRESPOSTA: Você é INTELIGENTE!\n");
+        printf("\nRESPOSTA: VocÃª Ã© INTELIGENTE!\n");
 
     }
 
