@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*Permanent Marker font*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*Lora font*/
+
+@font-face {
+    /*Através desse comando, pode-se baixar a fonte e linka-la diretamente da pasta do projeto.*/
+    font-family: 'Happy';
+    src: url('fonts/Stanberry.ttf') format('truetype');
+}
+
+/*
+    Tipos de format 'font'()
+    opentype(otf)
+    truetype(ttf)
+    embedded-opentype
+    truetype-aat(Apple Advanced Typography)
+    svg
+*/
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(128, 128, 128, 0.75);
+}
+
+h2 {
+    font-family: 'Happy', cursive;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.90);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.75);
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 35px;
+    /*recuo de primeira linha*/
+}
+
+div {
+    font-family: 'Happy', cursive;
+    background: #B1B1B1;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-width: 4px;
+    border-style: solid;
+    border-top-color: #DFDFDF;
+    border-right-color: #666;
+    border-bottom-color: #333;
+    border-left-color: #858585;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+a:hover {
+    background: #B1B1B1;
+    color: #FFF;
+    font-weight: bold;
+    border-color: #B1B1B1;
+
+}
