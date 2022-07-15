@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <!--
+        Pseudo classe ':' -  Pseudo elementos '::'
+    -->
+    <style>
+        div{
+            display: inline-block;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        
+        div:hover{
+            background-color: yellow;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+            
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <br>
+    
+        <a href="page02.html" rel="next">
+            <p>Página 02</p>
+        </a>
+        <a href="page03.html" rel="next">
+            <p>Página 03</p>
+        </a>
+   
+</body>
+</html>
