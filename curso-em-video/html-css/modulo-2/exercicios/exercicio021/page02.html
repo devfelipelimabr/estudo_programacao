@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(-90deg, #00008be7, #add8e6);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: darkblue;
+            border-radius: 5px;
+            padding: 10px;
+            margin: auto;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.521);
+
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        nav>a:hover {
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.50);
+            border: 2px solid aqua;
+            border-radius: 50%;
+        }
+
+        #assuntos>a {
+            text-decoration: none;
+            margin: auto;
+            padding: 5px;
+        }
+
+        #assuntos>a:hover {
+            text-decoration: underline;
+            text-shadow: 1px 1px 2px lightblue;
+
+        }
+
+        article {
+            background-color: #add8e6;
+            padding: 15px;
+            border-radius: 10px 0px;
+            margin: auto;
+        }
+
+        article>p {
+            margin: 0px;
+        }
+
+        article>aside {
+            width: 165px;
+            background-color: rgba(0, 0, 255, 0.20);
+            border-radius: 5px;
+            margin: 10px 0px 0px 0px;
+            padding: 5px;
+            color: black;
+
+        }
+
+        aside>p {
+            margin: auto;
+            
+        }
+
+        footer {
+            background-color: #00008b;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.521);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: auto;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        #gitlink {
+            text-decoration: none;
+            color: floralwhite;
+        }
+
+        #gitlink:hover {
+            text-decoration: underline;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.50);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site de notícias</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Economia</a>
+            <a href="#">Esportes</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Economia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe hic blanditiis quidem culpa
+                    praesentium sequi voluptates molestias non laudantium illo minima doloremque officiis nobis,
+                    obcaecati optio alias odit laborum?</p>
+                <aside>
+                    <p>Escrito por <em>Felipe Lima</em></p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <em><a id="gitlink" href="https://github.com/devfelipelimabr" rel="external"
+                    target="_blank">Felipe Lima</a></em></p>
+    </footer>
+
+</body>
+
+</html>
