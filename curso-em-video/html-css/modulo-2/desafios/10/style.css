@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    /*Através desse comando, pode-se baixar a fonte e linka-la diretamente da pasta do projeto.*/
+    font-family: 'tecno';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #38ef7d;
+}
+
+
+header {
+    background-image: linear-gradient(0deg, #11998e, #38ef7d);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
+    margin: auto;
+
+}
+
+header>h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+}
+
+header>h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    margin: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+
+    padding: 10px;
+    margin: auto;
+}
+
+nav>a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 15px;
+
+}
+
+nav>a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6)
+}
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+main>article>h1 {
+    font-family: 'tecno';
+    text-indent: 10px;
+}
+
+main>article>h2 {
+    background-image: linear-gradient(90deg, #38ef7e4f, #ffffff);
+    font-family: 'tecno';
+    text-indent: 10px;
+}
+
+main>article>p {
+    text-indent: 30px;
+    text-align: justify;
+    
+}
+
+#bonus {
+    background-color: #38ef7e4f;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
+    width: 850px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    
+}
+
+article>h3 {
+    background-color: #00bd48;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    
+}
+
+#bonus>p {
+    padding: 0px 10px;
+   
+}
+
+#bonus>ul {
+    display: inline-block;
+    list-style-image: url(imagens/check.png);
+    margin: auto;
+
+}
+
+#lista1 {
+    padding-right: 150px;
+}
+
