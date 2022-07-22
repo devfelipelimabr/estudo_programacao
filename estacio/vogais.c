@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Lê uma sequência de letras (a... z) terminada em ponto (.) e que mostre quantas vezes cada vogal (a, e, i, o, u) apareceu na lista.
+//LÃª uma sequÃªncia de letras (a... z) terminada em ponto (.) e que mostre quantas vezes cada vogal (a, e, i, o, u) apareceu na lista.
 
 void main()
 {
@@ -57,6 +57,8 @@ void main()
     printf("\nA vogal I apareceu %d vezes.", i);
     printf("\nA vogal O apareceu %d vezes.", o);
     printf("\nA vogal U apareceu %d vezes.", u);
+    
+    printf("Fim do programa!");
 
 
 
