@@ -2,8 +2,18 @@
 
 @font-face {
     /*Através desse comando, pode-se baixar a fonte e linka-la diretamente da pasta do projeto.*/
-    font-family: 'tecno';
+    font-family: 'idroid';
     src: url('fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'aldo';
+    src: url(fontes/AldotheApache.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'square';
+    src: url(fontes/Square.ttf) format('truetype');
 }
 
 * {
@@ -11,7 +21,7 @@
 }
 
 body {
-    background-color: #38ef7d;
+    background-color: #F0F1F2;
     margin: 0px;
 }
 
@@ -26,37 +36,39 @@ img {
 }
 
 header {
-    background-image: linear-gradient(0deg, #11998e, #38ef7d);
+    background-image: linear-gradient(0deg, #324359,#188FD9);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
     margin: auto;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
     
-
 }
 
 header>h1 {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'aldo', Geneva, Tahoma, sans-serif;
+    font-size: 4em;
     font-weight: normal;
     text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.30);
     color: white;
     margin: auto;
     padding: 20px 0px 0px 0px;
 }
 
 header>h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 600px;
-    margin: auto;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-family: 'square', Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.20);
     color: white;
     padding: 15px;
+    width: 600px;
+    margin: auto;
 }
 
 nav {
-
     padding: 10px;
     margin: auto;
     
@@ -71,8 +83,9 @@ nav>a {
 }
 
 nav>a:hover {
-    text-decoration: underline;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6)
+    transition: 0.5s;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 main {
@@ -80,18 +93,20 @@ main {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
     width: 900px;
     padding: 10px;
+    padding-top: 250px;
     margin: auto;
     border-radius: 0px 0px 10px 10px;
 }
 
 main>article>h1 {
-    font-family: 'tecno';
+    font-family: 'idroid';
+    font-size: 2em;
     text-indent: 10px;
 }
 
 main>article>h2 {
-    background-image: linear-gradient(90deg, #38ef7e4f, #ffffff);
-    font-family: 'tecno';
+    background-image: linear-gradient(90deg, #188fd970, #ffffff);
+    font-family: 'idroid';
     text-indent: 10px;
 }
 
@@ -102,12 +117,12 @@ iframe {
 }
 
 #video {    
-    background-color: green;
+    background-image: linear-gradient(90deg, #51768C, white, #51768C);
     margin: auto;
 }
 
 #bonus {
-    background-color: #38ef7e4f;
+    background-color: #F0F1F2;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
     width: 850px;
     margin: 10px auto;
@@ -117,7 +132,7 @@ iframe {
 }
 
 article>h3 {
-    background-color: #00bd48;
+    background-color: #735449;
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     padding: 5px;
@@ -147,7 +162,7 @@ footer>p {
     margin: 10px auto 0px auto;
     text-indent: 0px;
     text-align: center;
-    background-color: green;
+    background-color: #735449;
     padding: 2px;
 }
 
