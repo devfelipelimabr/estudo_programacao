@@ -25,6 +25,27 @@ body {
     margin: 0px;
 }
 
+.ref {
+    text-decoration: none;
+    background-color: #188fd970;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.ref:hover {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6)
+}
+
+.ref::after {
+    content: url(imagens/link2.png);    
+
+}
+
+span {
+    font-weight: bold;
+}
+
 p {
     text-indent: 30px;
     text-align: justify;
@@ -41,7 +62,7 @@ header {
     margin: auto;
     overflow: hidden;
     position: fixed;
-    width: 100%;
+    width: 100%; /* O 'width' em '%' já dá responsividade ao conteúdo */
     
 }
 
@@ -91,9 +112,10 @@ nav>a:hover {
 main {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
-    width: 900px;
+    min-width: 320px;
+    max-width: 800px;
     padding: 10px;
-    padding-top: 250px;
+    padding-top: 300px;
     margin: auto;
     border-radius: 0px 0px 10px 10px;
 }
@@ -119,12 +141,14 @@ iframe {
 #video {    
     background-image: linear-gradient(90deg, #51768C, white, #51768C);
     margin: auto;
+    
+    
 }
 
 #bonus {
     background-color: #F0F1F2;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
-    width: 850px;
+    width: 780px;
     margin: 10px auto;
     border-radius: 10px;
     padding-bottom: 10px;
@@ -141,9 +165,13 @@ article>h3 {
     
 }
 
+#bonus {
+    width: 100%;
+}
+
 #bonus>p {
     padding: 0px 10px;
-   
+       
 }
 
 #bonus>ul {
@@ -173,5 +201,5 @@ footer>p>a {
 
 footer>p>a:hover {
     text-decoration: underline;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6)
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
